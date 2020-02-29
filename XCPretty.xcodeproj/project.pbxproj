@@ -8,7 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		F222BB44240A156800C916E9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BB43240A156800C916E9 /* main.swift */; };
+		F222BB95240AC2B600C916E9 /* XCPrettyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = F222BB93240AC2B600C916E9 /* XCPrettyLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F222BB99240AC2C000C916E9 /* Ansi.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BB8A240AB12100C916E9 /* Ansi.swift */; };
+		F222BB9A240AC2C000C916E9 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BB4E240A194A00C916E9 /* Parser.swift */; };
+		F222BB9B240AC2C000C916E9 /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BB50240A1C7000C916E9 /* Regex.swift */; };
+		F222BB9C240AC2C000C916E9 /* Matcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BB52240A5E5800C916E9 /* Matcher.swift */; };
+		F222BB9D240AC2C000C916E9 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BB4C240A182300C916E9 /* Formatter.swift */; };
+		F222BB9E240AC2C000C916E9 /* Printer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BB4A240A177800C916E9 /* Printer.swift */; };
+		F222BBA0240AC2DC00C916E9 /* XCPretty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F222BB91240AC2B500C916E9 /* XCPretty.framework */; };
+		F222BBAA240AC30E00C916E9 /* XCPretty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F222BB91240AC2B500C916E9 /* XCPretty.framework */; };
+		F222BBB3240ACD4400C916E9 /* ANSITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BBB2240ACD4400C916E9 /* ANSITests.swift */; };
+		F290E60E240C05F90022EC92 /* SimpleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290E60A240BFCD20022EC92 /* SimpleFormatter.swift */; };
+		F2CE383E240B581F0053366A /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE383D240B581F0053366A /* ParserTests.swift */; };
+		F2CE3854240B5AEB0053366A /* MockFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE3853240B5AEB0053366A /* MockFormatter.swift */; };
+		F2CE3858240B6DFD0053366A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BBB0240AC8AB00C916E9 /* Constants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F222BBAB240AC30E00C916E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F222BB38240A156800C916E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F222BB90240AC2B500C916E9;
+			remoteInfo = XCPrettyLib;
+		};
+		F290E60C240C03650022EC92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F222BB38240A156800C916E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F222BB90240AC2B500C916E9;
+			remoteInfo = XCPrettyLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F222BB3E240A156800C916E9 /* CopyFiles */ = {
@@ -25,6 +56,22 @@
 /* Begin PBXFileReference section */
 		F222BB40240A156800C916E9 /* XCPretty */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XCPretty; sourceTree = BUILT_PRODUCTS_DIR; };
 		F222BB43240A156800C916E9 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F222BB4A240A177800C916E9 /* Printer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Printer.swift; sourceTree = "<group>"; };
+		F222BB4C240A182300C916E9 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		F222BB4E240A194A00C916E9 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		F222BB50240A1C7000C916E9 /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		F222BB52240A5E5800C916E9 /* Matcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matcher.swift; sourceTree = "<group>"; };
+		F222BB8A240AB12100C916E9 /* Ansi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ansi.swift; sourceTree = "<group>"; };
+		F222BB91240AC2B500C916E9 /* XCPretty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCPretty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F222BB93240AC2B600C916E9 /* XCPrettyLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCPrettyLib.h; sourceTree = "<group>"; };
+		F222BB94240AC2B600C916E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F222BBA5240AC30E00C916E9 /* XCPrettyLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XCPrettyLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F222BBA9240AC30E00C916E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F222BBB0240AC8AB00C916E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F222BBB2240ACD4400C916E9 /* ANSITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANSITests.swift; sourceTree = "<group>"; };
+		F290E60A240BFCD20022EC92 /* SimpleFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFormatter.swift; sourceTree = "<group>"; };
+		F2CE383D240B581F0053366A /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
+		F2CE3853240B5AEB0053366A /* MockFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +79,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F222BBA0240AC2DC00C916E9 /* XCPretty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F222BB8E240AC2B500C916E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F222BBA2240AC30E00C916E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F222BBAA240AC30E00C916E9 /* XCPretty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				F222BB42240A156800C916E9 /* XCPretty */,
+				F222BB92240AC2B600C916E9 /* XCPrettyLib */,
+				F222BBA6240AC30E00C916E9 /* XCPrettyLibTests */,
 				F222BB41240A156800C916E9 /* Products */,
+				F222BB9F240AC2DC00C916E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				F222BB40240A156800C916E9 /* XCPretty */,
+				F222BB91240AC2B500C916E9 /* XCPretty.framework */,
+				F222BBA5240AC30E00C916E9 /* XCPrettyLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,7 +130,77 @@
 			path = XCPretty;
 			sourceTree = "<group>";
 		};
+		F222BB92240AC2B600C916E9 /* XCPrettyLib */ = {
+			isa = PBXGroup;
+			children = (
+				F290E609240BFCBB0022EC92 /* Formatters */,
+				F222BB4A240A177800C916E9 /* Printer.swift */,
+				F222BB4E240A194A00C916E9 /* Parser.swift */,
+				F222BB50240A1C7000C916E9 /* Regex.swift */,
+				F222BB52240A5E5800C916E9 /* Matcher.swift */,
+				F222BB8A240AB12100C916E9 /* Ansi.swift */,
+				F222BB93240AC2B600C916E9 /* XCPrettyLib.h */,
+				F222BB94240AC2B600C916E9 /* Info.plist */,
+			);
+			path = XCPrettyLib;
+			sourceTree = "<group>";
+		};
+		F222BB9F240AC2DC00C916E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F222BBA6240AC30E00C916E9 /* XCPrettyLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				F2CE3855240B6A690053366A /* Fixtures */,
+				F2CE3852240B5AD80053366A /* Helpers */,
+				F222BBA9240AC30E00C916E9 /* Info.plist */,
+				F222BBB2240ACD4400C916E9 /* ANSITests.swift */,
+				F2CE383D240B581F0053366A /* ParserTests.swift */,
+			);
+			path = XCPrettyLibTests;
+			sourceTree = "<group>";
+		};
+		F290E609240BFCBB0022EC92 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				F222BB4C240A182300C916E9 /* Formatter.swift */,
+				F290E60A240BFCD20022EC92 /* SimpleFormatter.swift */,
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		F2CE3852240B5AD80053366A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F2CE3853240B5AEB0053366A /* MockFormatter.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F2CE3855240B6A690053366A /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				F222BBB0240AC8AB00C916E9 /* Constants.swift */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F222BB8C240AC2B500C916E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F222BB95240AC2B600C916E9 /* XCPrettyLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F222BB3F240A156800C916E9 /* XCPretty */ = {
@@ -76,11 +214,50 @@
 			buildRules = (
 			);
 			dependencies = (
+				F290E60D240C03650022EC92 /* PBXTargetDependency */,
 			);
 			name = XCPretty;
 			productName = XCPretty;
 			productReference = F222BB40240A156800C916E9 /* XCPretty */;
 			productType = "com.apple.product-type.tool";
+		};
+		F222BB90240AC2B500C916E9 /* XCPrettyLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F222BB96240AC2B600C916E9 /* Build configuration list for PBXNativeTarget "XCPrettyLib" */;
+			buildPhases = (
+				F222BB8C240AC2B500C916E9 /* Headers */,
+				F222BB8D240AC2B500C916E9 /* Sources */,
+				F222BB8E240AC2B500C916E9 /* Frameworks */,
+				F222BB8F240AC2B500C916E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCPrettyLib;
+			productName = XCPrettyLib;
+			productReference = F222BB91240AC2B500C916E9 /* XCPretty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F222BBA4240AC30E00C916E9 /* XCPrettyLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F222BBAD240AC30E00C916E9 /* Build configuration list for PBXNativeTarget "XCPrettyLibTests" */;
+			buildPhases = (
+				F222BBA1240AC30E00C916E9 /* Sources */,
+				F222BBA2240AC30E00C916E9 /* Frameworks */,
+				F222BBA3240AC30E00C916E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F222BBAC240AC30E00C916E9 /* PBXTargetDependency */,
+			);
+			name = XCPrettyLibTests;
+			packageProductDependencies = (
+			);
+			productName = XCPrettyLibTests;
+			productReference = F222BBA5240AC30E00C916E9 /* XCPrettyLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +272,12 @@
 					F222BB3F240A156800C916E9 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					F222BB90240AC2B500C916E9 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F222BBA4240AC30E00C916E9 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = F222BB3B240A156800C916E9 /* Build configuration list for PBXProject "XCPretty" */;
@@ -106,14 +289,35 @@
 				Base,
 			);
 			mainGroup = F222BB37240A156800C916E9;
+			packageReferences = (
+			);
 			productRefGroup = F222BB41240A156800C916E9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F222BB3F240A156800C916E9 /* XCPretty */,
+				F222BB90240AC2B500C916E9 /* XCPrettyLib */,
+				F222BBA4240AC30E00C916E9 /* XCPrettyLibTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F222BB8F240AC2B500C916E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F222BBA3240AC30E00C916E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F222BB3C240A156800C916E9 /* Sources */ = {
@@ -124,7 +328,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F222BB8D240AC2B500C916E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F222BB9E240AC2C000C916E9 /* Printer.swift in Sources */,
+				F222BB9C240AC2C000C916E9 /* Matcher.swift in Sources */,
+				F222BB9A240AC2C000C916E9 /* Parser.swift in Sources */,
+				F222BB9D240AC2C000C916E9 /* Formatter.swift in Sources */,
+				F222BB99240AC2C000C916E9 /* Ansi.swift in Sources */,
+				F290E60E240C05F90022EC92 /* SimpleFormatter.swift in Sources */,
+				F222BB9B240AC2C000C916E9 /* Regex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F222BBA1240AC30E00C916E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2CE383E240B581F0053366A /* ParserTests.swift in Sources */,
+				F222BBB3240ACD4400C916E9 /* ANSITests.swift in Sources */,
+				F2CE3854240B5AEB0053366A /* MockFormatter.swift in Sources */,
+				F2CE3858240B6DFD0053366A /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F222BBAC240AC30E00C916E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F222BB90240AC2B500C916E9 /* XCPrettyLib */;
+			targetProxy = F222BBAB240AC30E00C916E9 /* PBXContainerItemProxy */;
+		};
+		F290E60D240C03650022EC92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F222BB90240AC2B500C916E9 /* XCPrettyLib */;
+			targetProxy = F290E60C240C03650022EC92 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F222BB45240A156800C916E9 /* Debug */ = {
@@ -246,6 +488,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5CFB9JHGU;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier).Main";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -257,6 +500,99 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5CFB9JHGU;
 				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier).Main";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F222BB97240AC2B600C916E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y5CFB9JHGU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = XCPrettyLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = me.stcui.XCPrettyLib;
+				PRODUCT_NAME = XCPretty;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F222BB98240AC2B600C916E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y5CFB9JHGU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = XCPrettyLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = me.stcui.XCPrettyLib;
+				PRODUCT_NAME = XCPretty;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F222BBAE240AC30E00C916E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y5CFB9JHGU;
+				INFOPLIST_FILE = XCPrettyLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.stcui.XCPrettyLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F222BBAF240AC30E00C916E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = Y5CFB9JHGU;
+				INFOPLIST_FILE = XCPrettyLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.stcui.XCPrettyLibTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -279,6 +615,24 @@
 			buildConfigurations = (
 				F222BB48240A156800C916E9 /* Debug */,
 				F222BB49240A156800C916E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F222BB96240AC2B600C916E9 /* Build configuration list for PBXNativeTarget "XCPrettyLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F222BB97240AC2B600C916E9 /* Debug */,
+				F222BB98240AC2B600C916E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F222BBAD240AC30E00C916E9 /* Build configuration list for PBXNativeTarget "XCPrettyLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F222BBAE240AC30E00C916E9 /* Debug */,
+				F222BBAF240AC30E00C916E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

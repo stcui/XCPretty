@@ -7,6 +7,8 @@
 //
 
 import Foundation
-
-print("Hello, World!")
-
+import XCPretty
+let printer = XCPretty.Printer()
+while let line = readLine(strippingNewline: true) {
+    printer.prettyPrint(line)
+}
