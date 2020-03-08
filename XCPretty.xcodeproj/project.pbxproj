@@ -19,9 +19,13 @@
 		F222BBAA240AC30E00C916E9 /* XCPretty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F222BB91240AC2B500C916E9 /* XCPretty.framework */; };
 		F222BBB3240ACD4400C916E9 /* ANSITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BBB2240ACD4400C916E9 /* ANSITests.swift */; };
 		F290E60E240C05F90022EC92 /* SimpleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290E60A240BFCD20022EC92 /* SimpleFormatter.swift */; };
+		F290E611240C15970022EC92 /* Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290E610240C15970022EC92 /* Reporter.swift */; };
 		F2CE383E240B581F0053366A /* ParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE383D240B581F0053366A /* ParserTests.swift */; };
 		F2CE3854240B5AEB0053366A /* MockFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CE3853240B5AEB0053366A /* MockFormatter.swift */; };
 		F2CE3858240B6DFD0053366A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F222BBB0240AC8AB00C916E9 /* Constants.swift */; };
+		F2E180662414DBDC00655509 /* JUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E180652414DBDC00655509 /* JUnit.swift */; };
+		F2E180692414E95300655509 /* JUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E180682414E95300655509 /* JUnitTests.swift */; };
+		F2E1806B2414EF7100655509 /* ReporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E1806A2414EF7100655509 /* ReporterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +74,12 @@
 		F222BBB0240AC8AB00C916E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F222BBB2240ACD4400C916E9 /* ANSITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ANSITests.swift; sourceTree = "<group>"; };
 		F290E60A240BFCD20022EC92 /* SimpleFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFormatter.swift; sourceTree = "<group>"; };
+		F290E610240C15970022EC92 /* Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporter.swift; sourceTree = "<group>"; };
 		F2CE383D240B581F0053366A /* ParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserTests.swift; sourceTree = "<group>"; };
 		F2CE3853240B5AEB0053366A /* MockFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFormatter.swift; sourceTree = "<group>"; };
+		F2E180652414DBDC00655509 /* JUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JUnit.swift; sourceTree = "<group>"; };
+		F2E180682414E95300655509 /* JUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JUnitTests.swift; sourceTree = "<group>"; };
+		F2E1806A2414EF7100655509 /* ReporterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +141,7 @@
 		F222BB92240AC2B600C916E9 /* XCPrettyLib */ = {
 			isa = PBXGroup;
 			children = (
+				F290E60F240C12C00022EC92 /* Reporters */,
 				F290E609240BFCBB0022EC92 /* Formatters */,
 				F222BB4A240A177800C916E9 /* Printer.swift */,
 				F222BB4E240A194A00C916E9 /* Parser.swift */,
@@ -155,6 +164,7 @@
 		F222BBA6240AC30E00C916E9 /* XCPrettyLibTests */ = {
 			isa = PBXGroup;
 			children = (
+				F2E180672414E92B00655509 /* Reporters */,
 				F2CE3855240B6A690053366A /* Fixtures */,
 				F2CE3852240B5AD80053366A /* Helpers */,
 				F222BBA9240AC30E00C916E9 /* Info.plist */,
@@ -173,6 +183,15 @@
 			path = Formatters;
 			sourceTree = "<group>";
 		};
+		F290E60F240C12C00022EC92 /* Reporters */ = {
+			isa = PBXGroup;
+			children = (
+				F290E610240C15970022EC92 /* Reporter.swift */,
+				F2E180652414DBDC00655509 /* JUnit.swift */,
+			);
+			path = Reporters;
+			sourceTree = "<group>";
+		};
 		F2CE3852240B5AD80053366A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +206,15 @@
 				F222BBB0240AC8AB00C916E9 /* Constants.swift */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		F2E180672414E92B00655509 /* Reporters */ = {
+			isa = PBXGroup;
+			children = (
+				F2E180682414E95300655509 /* JUnitTests.swift */,
+				F2E1806A2414EF7100655509 /* ReporterTests.swift */,
+			);
+			path = Reporters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,10 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2E180662414DBDC00655509 /* JUnit.swift in Sources */,
 				F222BB9E240AC2C000C916E9 /* Printer.swift in Sources */,
 				F222BB9C240AC2C000C916E9 /* Matcher.swift in Sources */,
 				F222BB9A240AC2C000C916E9 /* Parser.swift in Sources */,
 				F222BB9D240AC2C000C916E9 /* Formatter.swift in Sources */,
+				F290E611240C15970022EC92 /* Reporter.swift in Sources */,
 				F222BB99240AC2C000C916E9 /* Ansi.swift in Sources */,
 				F290E60E240C05F90022EC92 /* SimpleFormatter.swift in Sources */,
 				F222BB9B240AC2C000C916E9 /* Regex.swift in Sources */,
@@ -348,8 +378,10 @@
 			files = (
 				F2CE383E240B581F0053366A /* ParserTests.swift in Sources */,
 				F222BBB3240ACD4400C916E9 /* ANSITests.swift in Sources */,
+				F2E1806B2414EF7100655509 /* ReporterTests.swift in Sources */,
 				F2CE3854240B5AEB0053366A /* MockFormatter.swift in Sources */,
 				F2CE3858240B6DFD0053366A /* Constants.swift in Sources */,
+				F2E180692414E95300655509 /* JUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
